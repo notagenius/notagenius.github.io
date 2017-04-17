@@ -10,7 +10,7 @@ permalink:        pretty
 title:            Not a Genius
 tagline:          'Science & Design Blog'
 description:      'Blog of Aileen Xi.'
-#url:              http://hyde.getpoole.com
+url:              http://notagenius.rocks
 baseurl:          /
 
 author:
