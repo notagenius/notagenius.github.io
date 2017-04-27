@@ -68,6 +68,11 @@ html {
     width: 18rem;
     text-align: left;
   }
+  img.title-logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 
 /* Sidebar links */
@@ -99,11 +104,6 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
-img.title-logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* Sticky sidebar
  *
