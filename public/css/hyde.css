@@ -69,7 +69,7 @@ html {
     text-align: left;
   }
   img.title-logo{
-  display: block;
+  float: left
   margin-left: auto;
   margin-right: auto;
 }
