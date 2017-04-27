@@ -74,8 +74,10 @@ html {
     text-align: left;
   }
   img.title-logo{
-  float: left
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Sidebar links */
