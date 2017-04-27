@@ -58,6 +58,11 @@ html {
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
+  img.title-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -70,8 +75,6 @@ html {
   }
   img.title-logo{
   float: left
-  margin-left: auto;
-  margin-right: auto;
 }
 }
 
