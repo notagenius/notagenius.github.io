@@ -60,8 +60,6 @@ html {
   background-color: #202020;
   img.title-logo{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media (min-width: 48em) {
@@ -74,9 +72,6 @@ html {
     text-align: left;
   }
   img.title-logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
