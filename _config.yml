@@ -11,7 +11,7 @@ title:            Not a Genius
 tagline:          'Science & Design Blog'
 description:      'Blog of Aileen Xi.'
 url:              http://notagenius.rocks
-baseurl:          /hyde
+baseurl:          /
 
 author:
   name:           'Aileen Xi'
