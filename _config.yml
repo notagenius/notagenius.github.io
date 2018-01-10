@@ -11,13 +11,13 @@ title:            Not a Genius
 tagline:          'Science & Design Blog'
 description:      'Blog of Aileen Xi.'
 url:              http://notagenius.rocks
-baseurl:          /
+baseurl:          ""
 
 author:
   name:           'Aileen Xi'
   url:            https://www.instagram.com/thatwolfiefeeling/
 
-paginate:         5
+paginate:         1
 
 # Custom vars
 version:          0.0.9
