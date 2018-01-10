@@ -3,11 +3,7 @@ layout: post
 title: Leetcode 1.Two_Sum
 ---
 
-<div class="message">
-威玲旺卡的Leetcode的代码[Repo](https://github.com/notagenius/codejam_practice)
-</div>
-
-第一题two sum的题目：
+two sum题干：
 
 >Given an array of integers, return indices of the two numbers such that they
 >add up to a specific target.
@@ -18,9 +14,9 @@ title: Leetcode 1.Two_Sum
 >Because nums[0] + nums[1] = 2 + 7 = 9,
 >return [0, 1].
 
-人人所说的最天真解法，两个for循环嵌套，最天真，是因为时间复杂度最高，但是不要忘记这是空间复杂度最低的。所以，记得考量。
+两个for循环嵌套，最天真，是因为时间复杂度最高，但是不能忘它是空间复杂度最低的。
 
-C++解法：
+C++解一：
 
 {% highlight cpp %}
 class Solution {
@@ -40,4 +36,19 @@ public:
 };
 {% endhighlight %}
 
+Python解一：
+
+{% hightlight python%}
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        for x in range (0, len(nums)):
+            for y in range(x+1, len(nums)):
+                if nums[x]+nums[y] == target:
+return [x, y] 
+{% endhighlight %}
 
