@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leetcode 1.Two_Sum
+title: Leetcode 1_Two_Sum
 ---
 
 two sum题干：
