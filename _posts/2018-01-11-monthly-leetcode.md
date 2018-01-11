@@ -221,7 +221,7 @@ Performance: 593ms
 
 关于正式的计算机语言Benchmark看 [The Computer Language Benchmarks Game](https://benchmarksgame.alioth.debian.org/) 。
 
-图和Benchumark比较，除了`Java`和`Go`快的不正常，`C++`看起来有点慢，但是不知道编译器，`Python`真是不济，其他排序还挺理性。我想，
+图和Benchmark比较，除了`Java`和`Go`快的不正常，`C++`看起来有点慢，但是不知道编译器，`Python`真是不济，其他排序还挺理性。我想，
 
 - Leetcode里的`Java`和`go`，应该不是`CPU运行时间`。
 
@@ -241,8 +241,8 @@ Performance: 593ms
 
 - 一直单曲重复`Luca Brasi`的 [Theme Song from Hq](https://www.youtube.com/watch?v=zA8Db1uOLDE) 
 
-- 发现Markdown定义的符号里嵌套`html`的`tag`会失败，这样的`O(n<sup>2</sup>)`和 O(n<sup>2</sup>)
+- 发现Markdown定义的符号里嵌套html的tag会失败，这样的`O(n<sup>2</sup>)`和 O(n<sup>2</sup>)
 
-如果有建议，观点或者问题的话，可以给我发邮件`aileen365@gmail.com`，因为我还不知道该怎么设`留言板`，有主意欢迎告诉我。
+如果有建议，观点或者问题的话，可以给我发邮件`aileen365@gmail.com`，因为我还不知道该怎么在静态网页里设`留言板`，有主意欢迎告诉我。
 
 
