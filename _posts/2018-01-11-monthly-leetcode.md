@@ -47,10 +47,11 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        for x in range (0, len(nums)):
-            for y in range(x+1, len(nums)):
-                if nums[x]+nums[y] == target:
-			return [x, y] 
+        for i in range (0, len(nums)):
+            for j in range(i+1, len(nums)):
+                if nums[i]+nums[j] == target:
+		    return [i, j]
+        raise ValueError("No solution") 
 {% endhighlight %}
 
 Java解一：
@@ -75,13 +76,12 @@ C解一：
 {% highlight c %}
 /**
  * Note: The returned array must be malloced, assume caller calls free().
- */
+ **/
 int* twoSum(int* nums, int numsSize, int target) {
-    static int result[2]= { 0, 0 };
-    int i,j;
-    for(i = 0; i < numsSize; i++)
+    static int result[2]= { -1, -1 };
+    for(int i = 0; i < numsSize; i++)
     {
-        for(j = i+1; j < numsSize; j++)
+        for(int j = i+1; j < numsSize; j++)
         {
             if(nums[i]+nums[j] == target)
             {
@@ -95,7 +95,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 }
 {% endhighlight%}
 
-C#解一
+C#解一:
 
 {% highlight csharp %}
 public class Solution {
@@ -111,3 +111,25 @@ public class Solution {
     }
 }
 {% endhighlight %}
+
+Javascript解一：
+
+{% highlight javascript %}
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ **/
+var twoSum = function(nums, target) {
+    for (var i=0; i<nums.length; i++){
+        for (var j=i+1; j<nums.length; j++){
+            if (nums[i]+nums[j]===target){
+                return [i,j];
+            }
+        }
+    }
+    throw new Error("No Solution");
+};
+{% endhighlight %}
+
+
