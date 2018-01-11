@@ -3,7 +3,7 @@ layout: post
 title: 1_Two_Sum
 ---
 
-#### two sum题干：
+#### Two Sum题干：
 
 >Given an array of integers, return indices of the two numbers such that they
 >add up to a specific target.
@@ -132,4 +132,18 @@ var twoSum = function(nums, target) {
 };
 {% endhighlight %}
 
-#### Golang解一
+#### Ruby解一:
+
+{% highlight ruby %}
+# @param {Integer[]} nums
+# @param {Integer} target
+# @return {Integer[]}
+def two_sum(nums, target)
+  nums.each_with_index do |num1, i|
+    nums[i+1..-1].each_with_index do |num2, j|
+      return [i, i+j+1] if num1 + num2 == target
+    end
+  end
+  return "No solution"
+end
+{% endhighlight %}
