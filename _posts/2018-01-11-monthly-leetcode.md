@@ -231,7 +231,7 @@ Performance: 593ms
 
 - 这是我fork [Hyde](https://github.com/poole/hyde) 后修改的一个`github page`。
 
-- 博文是我在 [Vim](http://www.vim.org/) 里搭配插件[livemark.vim](https://github.com/miyakogi/livemark.vim)直接码的，目的是熟悉下[Jerkll](https://jekyllrb.com/)的`Markdown`
+- 博文是我在 [Vim](http://www.vim.org/) 里搭配插件 [livemark.vim](https://github.com/miyakogi/livemark.vim) 直接码的，目的是熟悉下[Jerkll](https://jekyllrb.com/)的`Markdown`
 
 - 图表是在 [Infogram](https://infogram.com/) 里生成的
 
