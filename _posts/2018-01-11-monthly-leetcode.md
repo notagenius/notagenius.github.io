@@ -17,7 +17,7 @@ title: 折腾一个Two_Sum
 >Because nums[0] + nums[1] = 2 + 7 = 9,
 >return [0, 1].
 
-两层for循环，最天真，是因为时间复杂度最高O(n<sup>2</sup>)，但是不能忘它是空间复杂度最低的`O(1)`。但是最天真的遍历不代表它没什么好折腾的。可以换语言写写。
+两层for循环，最天真，是因为时间复杂度最高O(n<sup>2</sup>)，但是不能忘它是空间复杂度最低的O(1)。但是最天真的遍历不代表它没什么好折腾的。可以换语言写写。
 
 #### C++解一：
 
@@ -219,7 +219,7 @@ Performance: 593ms
 绘制了一张图。
 ![placeholder](/image/2018-01-11-Leetcode.png "Leetcode Performance")
 
-关于正式的计算机语言Benchmark看[这里](https://benchmarksgame.alioth.debian.org/)。
+关于正式的计算机语言Benchmark看[The Computer Language Benchmarks Game](https://benchmarksgame.alioth.debian.org/)。
 
 图和Benchumark比较，除了`Java`和`Go`快的不太正常，C++看起来有点慢，但是不知道编译器，其他排序还挺理性。我想，
 
@@ -241,7 +241,7 @@ Performance: 593ms
 
 - 一直单曲重复`Luca Brasi`的 [Theme Song from Hq](https://www.youtube.com/watch?v=zA8Db1uOLDE) 
 
-- 发现Markdown定义的符号里嵌套`html`的`tag`会失败，这样的`O(<sup>2</sup>)`和 O(<sup>2</sup>)
+- 发现Markdown定义的符号里嵌套`html`的`tag`会失败，这样的`O(n<sup>2</sup>)`和 O(n<sup>2</sup>)
 
 如果有建议，观点或者问题的话，可以给我发邮件`aileen365@gmail.com`，因为我还不知道该怎么设`留言板`，有建议欢迎告诉我。
 
