@@ -223,23 +223,23 @@ Performance: 593ms
 
 图和Benchumark比较，除了`Java`和`Go`快的不太正常，C++看起来有点慢，但是不知道编译器，其他排序还挺理性。我想，
 
-*Leetcode里的`Java`和`go`，应该不是`CPU运行时间`。
+- Leetcode里的`Java`和`go`，应该不是`CPU运行时间`。
 
-*`Pyhton3`直接Time Out了，在单独的几个手动测试集上`Python3`竟然比`Python2`慢将近一倍。这个真的意外。
+- `Pyhton3`直接Time Out，在单独的手动测试集上`Python3`竟然比`Python2`慢将近一倍。这个真意外。
 
 #### 关于这篇博客一些有意思的东西：
 
-*这是我fork[Hyde](https://github.com/poole/hyde)后修改的一个`github page`。
+- 这是我fork[Hyde](https://github.com/poole/hyde)后修改的一个`github page`。
 
-*博文是我在[Vim](http://www.vim.org/)里搭配插件[livemark.vim](https://github.com/miyakogi/livemark.vim)直接码的，目的是熟悉下[Jerkll](https://jekyllrb.com/)的`Markdown`
+- 博文是我在[Vim](http://www.vim.org/)里搭配插件[livemark.vim](https://github.com/miyakogi/livemark.vim)直接码的，目的是熟悉下[Jerkll](https://jekyllrb.com/)的`Markdown`
 
-*图表是在[Infogram](https://infogram.com/)里生成的
+- 图表是在[Infogram](https://infogram.com/)里生成的
 
-*题目和测试都是在[Leetcode](https://leetcode.com/)上进行的
+- 题目和测试都是在[Leetcode](https://leetcode.com/)上进行的
 
-*期间把[阿狗](https://www.instagram.com/thatwolfiefeeling/)忘记，以至于它被泡在洗衣粉里一整晚
+- 期间把[阿狗](https://www.instagram.com/thatwolfiefeeling/)忘记，以至于它被泡在洗衣粉里一整晚
 
-*一直单曲重复`Luca Brasi`的[Theme Song from Hq](https://www.youtube.com/watch?v=zA8Db1uOLDE)
+- 一直单曲重复`Luca Brasi`的[Theme Song from Hq](https://www.youtube.com/watch?v=zA8Db1uOLDE)
 
 如果有建议，观点或者问题的话，可以给我发邮件`aileen365@gmail.com`，因为我还不知道该怎么设`留言板`。
 
