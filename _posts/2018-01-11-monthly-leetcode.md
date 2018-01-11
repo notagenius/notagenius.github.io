@@ -36,6 +36,7 @@ public:
     }   
 };
 {% endhighlight %}
+Performance: 190ms
 
 #### Python2.x/3.x解一：
 
@@ -53,6 +54,7 @@ class Solution(object):
 		    return [i, j]
         raise ValueError("No solution") 
 {% endhighlight %}
+Performance: python2 5543ms / python3 time out
 
 #### Java解一：
 
@@ -70,6 +72,7 @@ class Solution {
     }
 }
 {% endhighlight %}
+Performance: 43ms
 
 #### C解一：
 
@@ -94,6 +97,7 @@ int* twoSum(int* nums, int numsSize, int target) {
     return NULL;
 }
 {% endhighlight%}
+Performance: 103ms
 
 #### C#解一:
 
@@ -111,6 +115,7 @@ public class Solution {
     }
 }
 {% endhighlight %}
+Performance: 805ms
 
 #### Javascript解一：
 
@@ -131,6 +136,7 @@ var twoSum = function(nums, target) {
     throw new Error("No solution");
 };
 {% endhighlight %}
+Performance: 200ms
 
 #### Ruby解一:
 
@@ -147,6 +153,7 @@ def two_sum(nums, target)
   return "No solution"
 end
 {% endhighlight %}
+Performance: 5624ms
 
 #### Swift解一：
 
@@ -167,6 +174,7 @@ class Solution {
     }
 }
 {% endhighlight %}
+Performance: 947ms
 
 #### Golang解一：
 {% highlight go %}
@@ -181,6 +189,7 @@ func twoSum(nums []int, target int) []int {
     return nil
 }
 {% endhighlight%}
+Performance: 63ms
 
 #### Kotlin解一：
 {% highlight kotlin %}
@@ -197,4 +206,11 @@ class Solution {
     }
 }
 {% endhighlight %}
+Performance: 593ms
 
+#### Home Studio不专业分析：
+蛮无聊的吧，哈哈，每个代码都很相近了，Ruby, Swift, Golang和Kotlin全部都不懂异常，就被我忽悠了。
+过去学语言都掉进了语法这个白痴的误区里，我现在问我自己它们之间有啥各自的语法特性和优劣，我根本就说不出来，很衰。
+所以唯一的意义是温习了一遍语法，不过我把它们都送到Leetcode里去运行了，虽然不知道Leetcode的编译器，但从过去经验上看各种语言的测试集是一样的。
+绘制了一张图。
+![placeholder](/image/2018-01-11-Leetcode.png "Leetcode Performance")
