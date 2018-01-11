@@ -38,7 +38,7 @@ public:
 
 Python解一：
 
-{% hightlight python%}
+{% highlight python%}
 class Solution(object):
     def twoSum(self, nums, target):
         """
