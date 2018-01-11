@@ -219,9 +219,9 @@ Performance: 593ms
 绘制了一张图。
 ![placeholder](/image/2018-01-11-Leetcode.png "Leetcode Performance")
 
-关于正式的计算机语言Benchmark看[The Computer Language Benchmarks Game](https://benchmarksgame.alioth.debian.org/)。
+关于正式的计算机语言Benchmark看 [The Computer Language Benchmarks Game](https://benchmarksgame.alioth.debian.org/) 。
 
-图和Benchumark比较，除了`Java`和`Go`快的不太正常，C++看起来有点慢，但是不知道编译器，其他排序还挺理性。我想，
+图和Benchumark比较，除了`Java`和`Go`快的不太正常，`C++`看起来有点慢，但是不知道编译器，`Python`真是不济，其他排序还挺理性。我想，
 
 - Leetcode里的`Java`和`go`，应该不是`CPU运行时间`。
 
