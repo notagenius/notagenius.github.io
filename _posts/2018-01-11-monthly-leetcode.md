@@ -216,7 +216,7 @@ Performance: 593ms
 蛮无聊的吧，每个代码我都尽力让他们相近了，`Ruby`, `Swift`, `Golang`和`Kotlin`全部都不懂异常，就被我忽悠了。
 过去学语言都掉进了语法这个白痴的误区里，我现在问我自己它们之间有啥各自的语法特性和优劣，我根本就说不出来，很衰。
 所以唯一的意义是温习了一遍语法，不过我把它们都送到Leetcode里去运行了，从过去有限的刷题经验上看各种语言的测试集是一样的。
-绘制了一张图。
+整理了它们的运行时间绘制了一张图。
 ![placeholder](/image/2018-01-11-Leetcode.png "Leetcode Performance")
 
 关于正式的计算机语言Benchmark看 [The Computer Language Benchmarks Game](https://benchmarksgame.alioth.debian.org/) 。
@@ -231,7 +231,7 @@ Performance: 593ms
 
 - 这是我fork [Hyde](https://github.com/poole/hyde) 后修改的一个`github page`。
 
-- 博文是我在 [Vim](http://www.vim.org/) 里搭配插件 [livemark.vim](https://github.com/miyakogi/livemark.vim) 直接码的，目的是熟悉下[Jerkll](https://jekyllrb.com/)的`Markdown`
+- 博文是我在 [Vim](http://www.vim.org/) 里搭配插件 [livemark.vim](https://github.com/miyakogi/livemark.vim) 直接码的，目的是熟悉下 [Jerkll](https://jekyllrb.com/) 的`Markdown`
 
 - 图表是在 [Infogram](https://infogram.com/) 里生成的
 
