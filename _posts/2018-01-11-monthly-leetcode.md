@@ -1,7 +1,10 @@
 ---
 layout: post
-title: 1_Two_Sum
+title: 折腾一个Two_Sum
 ---
+<div class="message">
+在这篇文章里，我用了10个计算机语言解决一个算法小问题。在看一下Leetcode执行它们的性能。
+</div>
 
 #### Two Sum题干：
 
@@ -14,7 +17,7 @@ title: 1_Two_Sum
 >Because nums[0] + nums[1] = 2 + 7 = 9,
 >return [0, 1].
 
-两层for循环，最天真，是因为时间复杂度最高O(n<sup>2</sup>)，但是不能忘它是空间复杂度最低的O(1)。但是最天真的遍历不代表它没什么好折腾的。可以换语言写写。
+两层for循环，最天真，是因为时间复杂度最高`O(n<sup>2</sup>)`，但是不能忘它是空间复杂度最低的`O(1)`。但是最天真的遍历不代表它没什么好折腾的。可以换语言写写。
 
 #### C++解一：
 
@@ -209,25 +212,35 @@ class Solution {
 Performance: 593ms
 
 #### Home Studio不专业分析：
-蛮无聊的吧，每个代码我都尽力让他们相近了，Ruby, Swift, Golang和Kotlin全部都不懂异常，就被我忽悠了。
+
+蛮无聊的吧，每个代码我都尽力让他们相近了，`Ruby`, `Swift`, `Golang`和`Kotlin`全部都不懂异常，就被我忽悠了。
 过去学语言都掉进了语法这个白痴的误区里，我现在问我自己它们之间有啥各自的语法特性和优劣，我根本就说不出来，很衰。
-所以唯一的意义是温习了一遍语法，不过我把它们都送到Leetcode里去运行了，虽然不知道Leetcode的编译器，但从过去经验上看各种语言的测试集是一样的。
+所以唯一的意义是温习了一遍语法，不过我把它们都送到Leetcode里去运行了，从过去有限的刷题经验上看各种语言的测试集是一样的。
 绘制了一张图。
 ![placeholder](/image/2018-01-11-Leetcode.png "Leetcode Performance")
-关于正式的计算机语言Benchmark看[这里](https://benchmarksgame.alioth.debian.org/)
-图和Benchumark比较，除了Java和Go快的不太正常，其他的排序都还理性。所以，
-*Leetcode里的Java和go，应该不是CPU运行时间。
-*Pyhton3直接Time Out了，在单独的几个手动测试集上Python3竟然比Python2慢将近一倍。这个真的意外。
+
+关于正式的计算机语言Benchmark看[这里](https://benchmarksgame.alioth.debian.org/)。
+
+图和Benchumark比较，除了`Java`和`Go`快的不太正常，C++看起来有点慢，但是不知道编译器，其他排序还挺理性。我想，
+
+*Leetcode里的`Java`和`go`，应该不是`CPU运行时间`。
+
+*`Pyhton3`直接Time Out了，在单独的几个手动测试集上`Python3`竟然比`Python2`慢将近一倍。这个真的意外。
 
 #### 关于这篇博客一些有意思的东西：
 
-*这是我fork[Hyde](https://github.com/poole/hyde)后修改的一个网站，commit了'100'多次。
-*博文是我在[Vim](http://www.vim.org/)里凭空码的
-*图表是在[Infogram](https://infogram.com/)里生成的
-*题目和测试都是在[Leetcode](https://leetcode.com/)上进行的
-*期间把[阿狗](https://www.instagram.com/thatwolfiefeeling/)忘记，以至于它被泡在洗衣粉里一整晚
-*一直单曲重复'Luca Brasi'的[Theme Song from Hq](https://www.youtube.com/watch?v=zA8Db1uOLDE)
+*这是我fork[Hyde](https://github.com/poole/hyde)后修改的一个网站，commit了`100`多次。
 
-如果有建议，观点或者问题的话，可以给我发邮件'aileen365@gmail.com'，或者在[新浪微博](https://www.weibo.com/aileensays) 上找到我。
+*博文是我在[Vim](http://www.vim.org/)里直接码的，需要熟悉一下[Jerkll](https://jekyllrb.com/)的`Markdown`
+
+*图表是在[Infogram](https://infogram.com/)里生成的
+
+*题目和测试都是在[Leetcode](https://leetcode.com/)上进行的
+
+*期间把[阿狗](https://www.instagram.com/thatwolfiefeeling/)忘记，以至于它被泡在洗衣粉里一整晚
+
+*一直单曲重复`Luca Brasi`的[Theme Song from Hq](https://www.youtube.com/watch?v=zA8Db1uOLDE)
+
+如果有建议，观点或者问题的话，可以给我发邮件`aileen365@gmail.com`，因为我还不知道该怎么设`留言板`。
 
 
