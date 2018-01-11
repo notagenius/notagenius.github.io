@@ -3,7 +3,7 @@ layout: post
 title: 1_Two_Sum
 ---
 
-### two sum题干：
+#### two sum题干：
 
 >Given an array of integers, return indices of the two numbers such that they
 >add up to a specific target.
@@ -16,7 +16,7 @@ title: 1_Two_Sum
 
 两个for循环嵌套，最天真，是因为时间复杂度最高O(n<sup>2</sup>)，但是不能忘它是空间复杂度最低的O(1)。但是最天真的枚举不代表它没什么好说的。
 
-### C++解一：
+#### C++解一：
 
 {% highlight cpp %}
 class Solution {
@@ -37,7 +37,7 @@ public:
 };
 {% endhighlight %}
 
-### Python2.x/3.x解一：
+#### Python2.x/3.x解一：
 
 {% highlight python%}
 class Solution(object):
@@ -54,7 +54,7 @@ class Solution(object):
         raise ValueError("No solution") 
 {% endhighlight %}
 
-### Java解一：
+#### Java解一：
 
 {% highlight java %}
 class Solution {
@@ -71,7 +71,7 @@ class Solution {
 }
 {% endhighlight %}
 
-### C解一：
+#### C解一：
 
 {% highlight c %}
 /**
@@ -95,7 +95,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 }
 {% endhighlight%}
 
-### C#解一:
+#### C#解一:
 
 {% highlight csharp %}
 public class Solution {
@@ -112,7 +112,7 @@ public class Solution {
 }
 {% endhighlight %}
 
-### Javascript解一：
+#### Javascript解一：
 
 {% highlight javascript %}
 /**
@@ -132,4 +132,4 @@ var twoSum = function(nums, target) {
 };
 {% endhighlight %}
 
-
+#### Golang解一
