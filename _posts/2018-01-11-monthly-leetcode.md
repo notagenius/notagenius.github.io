@@ -97,7 +97,7 @@ int* twoSum(int* nums, int numsSize, int target) {
 
 #### C#解一:
 
-{% highlight csharp %}
+{% highlight cs %}
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
          for (int i=0; i<nums.Length; i++){
@@ -114,7 +114,7 @@ public class Solution {
 
 #### Javascript解一：
 
-{% highlight javascript %}
+{% highlight js %}
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -167,3 +167,34 @@ class Solution {
     }
 }
 {% endhighlight %}
+
+#### Golang解一：
+{% highlight go %}
+func twoSum(nums []int, target int) []int {
+    for i := 0; i < len(nums); i++ {
+        for j := i + 1; j < len(nums); j++ {
+            if nums[i] + nums[j] == target {
+                return []int{i, j}
+            }
+        }
+    }
+    return nil
+}
+{% endhighlight%}
+
+#### Kotlin解一：
+{% highlight kotlin %}
+class Solution {
+    fun twoSum(nums: IntArray, target: Int): IntArray {
+        for( i in 0..nums.size-1){
+            for( j in i+1..nums.size-1){
+                if(nums[i] + nums[j] == target){
+                    return intArrayOf(i,j)
+                }
+            }
+        }        
+    return intArrayOf()
+    }
+}
+{% endhighlight %}
+
