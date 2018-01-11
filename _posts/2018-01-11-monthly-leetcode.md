@@ -221,11 +221,11 @@ Performance: 593ms
 
 关于正式的计算机语言Benchmark看 [The Computer Language Benchmarks Game](https://benchmarksgame.alioth.debian.org/) 。
 
-图和Benchumark比较，除了`Java`和`Go`快的不太正常，`C++`看起来有点慢，但是不知道编译器，`Python`真是不济，其他排序还挺理性。我想，
+图和Benchumark比较，除了`Java`和`Go`快的不正常，`C++`看起来有点慢，但是不知道编译器，`Python`真是不济，其他排序还挺理性。我想，
 
 - Leetcode里的`Java`和`go`，应该不是`CPU运行时间`。
 
-- `Pyhton3`直接Time Out，在单独的手动测试集上`Python3`竟然比`Python2`慢将近一倍。这个真意外。
+- `Python3`直接Time Out，在单独的手动测试集上`Python3`竟然比`Python2`慢将近一倍。这个真意外。
 
 #### 关于这篇博客一些有意思的东西：
 
@@ -243,6 +243,6 @@ Performance: 593ms
 
 - 发现Markdown定义的符号里嵌套`html`的`tag`会失败，这样的`O(n<sup>2</sup>)`和 O(n<sup>2</sup>)
 
-如果有建议，观点或者问题的话，可以给我发邮件`aileen365@gmail.com`，因为我还不知道该怎么设`留言板`，有建议欢迎告诉我。
+如果有建议，观点或者问题的话，可以给我发邮件`aileen365@gmail.com`，因为我还不知道该怎么设`留言板`，有主意欢迎告诉我。
 
 
