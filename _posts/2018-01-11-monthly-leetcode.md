@@ -14,7 +14,7 @@ two sum题干：
 >Because nums[0] + nums[1] = 2 + 7 = 9,
 >return [0, 1].
 
-两个for循环嵌套，最天真，是因为时间复杂度最高O(n<sup>2)，但是不能忘它是空间复杂度最低的O(1)。但是最天真的枚举不代表它没什么好说的。
+两个for循环嵌套，最天真，是因为时间复杂度最高O(n<sup>2</sup>)，但是不能忘它是空间复杂度最低的O(1)。但是最天真的枚举不代表它没什么好说的。
 
 C++解一：
 
@@ -94,6 +94,8 @@ int* twoSum(int* nums, int numsSize, int target) {
     return NULL;
 }
 {% endhighlight%}
+
+C#解一
 
 {% highlight csharp %}
 public class Solution {
