@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Leetcode 1_Two_Sum
+title: 1_Two_Sum
 ---
 
 two sum题干：
 
 >Given an array of integers, return indices of the two numbers such that they
->add up to a specific target.
+>add up to a specific target.\n
 >You may assume that each input would have exactly one solution, and you may
->not use the same element twice. 
->Example:
->Given nums = [2, 7, 11, 15], target = 9,
->Because nums[0] + nums[1] = 2 + 7 = 9,
->return [0, 1].
+>not use the same element twice. \n
+>Example:\n
+>Given nums = [2, 7, 11, 15], target = 9,\n
+>Because nums[0] + nums[1] = 2 + 7 = 9,\n
+>return [0, 1].\n
 
 两个for循环嵌套，最天真，是因为时间复杂度最高，但是不能忘它是空间复杂度最低的。
 
@@ -64,7 +64,7 @@ class Solution {
                 }
             }
         }
-        throw new IllegalArgumentException("No two sum solution");
+        throw new IllegalArgumentException("No solution");
     }
 }
 {% endhighlight %}
