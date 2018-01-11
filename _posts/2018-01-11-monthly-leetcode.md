@@ -3,7 +3,7 @@ layout: post
 title: 折腾一个Two_Sum
 ---
 <div class="message">
-在这篇文章里，我用了10个计算机语言解决一个算法小问题。在看一下Leetcode执行它们的性能。
+在这篇文章里，我用了10个计算机语言解决一个算法小问题。再看了下Leetcode执行它们的性能。
 </div>
 
 #### Two Sum题干：
@@ -17,7 +17,7 @@ title: 折腾一个Two_Sum
 >Because nums[0] + nums[1] = 2 + 7 = 9,
 >return [0, 1].
 
-两层for循环，最天真，是因为时间复杂度最高`O(n<sup>2</sup>)`，但是不能忘它是空间复杂度最低的`O(1)`。但是最天真的遍历不代表它没什么好折腾的。可以换语言写写。
+两层for循环，最天真，是因为时间复杂度最高O(n<sup>2</sup>)，但是不能忘它是空间复杂度最低的`O(1)`。但是最天真的遍历不代表它没什么好折腾的。可以换语言写写。
 
 #### C++解一：
 
@@ -229,18 +229,20 @@ Performance: 593ms
 
 #### 关于这篇博客一些有意思的东西：
 
-- 这是我fork[Hyde](https://github.com/poole/hyde)后修改的一个`github page`。
+- 这是我fork [Hyde](https://github.com/poole/hyde) 后修改的一个`github page`。
 
-- 博文是我在[Vim](http://www.vim.org/)里搭配插件[livemark.vim](https://github.com/miyakogi/livemark.vim)直接码的，目的是熟悉下[Jerkll](https://jekyllrb.com/)的`Markdown`
+- 博文是我在 [Vim](http://www.vim.org/) 里搭配插件[livemark.vim](https://github.com/miyakogi/livemark.vim)直接码的，目的是熟悉下[Jerkll](https://jekyllrb.com/)的`Markdown`
 
-- 图表是在[Infogram](https://infogram.com/)里生成的
+- 图表是在 [Infogram](https://infogram.com/) 里生成的
 
-- 题目和测试都是在[Leetcode](https://leetcode.com/)上进行的
+- 题目和测试都是在 [Leetcode](https://leetcode.com/) 上进行的
 
-- 期间把[阿狗](https://www.instagram.com/thatwolfiefeeling/)忘记，以至于它被泡在洗衣粉里一整晚
+- 期间把 [阿狗](https://www.instagram.com/thatwolfiefeeling/) 忘记，以至于它被泡在洗衣粉里一晚
 
-- 一直单曲重复`Luca Brasi`的[Theme Song from Hq](https://www.youtube.com/watch?v=zA8Db1uOLDE)
+- 一直单曲重复`Luca Brasi`的 [Theme Song from Hq](https://www.youtube.com/watch?v=zA8Db1uOLDE) 
 
-如果有建议，观点或者问题的话，可以给我发邮件`aileen365@gmail.com`，因为我还不知道该怎么设`留言板`。
+- 发现Markdown定义的符号里嵌套`html`的`tag`会失败，这样的`O(<sup>2</sup>)`和 O(<sup>2</sup>)
+
+如果有建议，观点或者问题的话，可以给我发邮件`aileen365@gmail.com`，因为我还不知道该怎么设`留言板`，有建议欢迎告诉我。
 
 
