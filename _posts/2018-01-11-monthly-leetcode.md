@@ -6,15 +6,15 @@ title: 1_Two_Sum
 two sum题干：
 
 >Given an array of integers, return indices of the two numbers such that they
->add up to a specific target.\n
+>add up to a specific target.
 >You may assume that each input would have exactly one solution, and you may
->not use the same element twice. \n
->Example:\n
->Given nums = [2, 7, 11, 15], target = 9,\n
->Because nums[0] + nums[1] = 2 + 7 = 9,\n
->return [0, 1].\n
+>not use the same element twice. 
+>Example:
+>Given nums = [2, 7, 11, 15], target = 9,
+>Because nums[0] + nums[1] = 2 + 7 = 9,
+>return [0, 1].
 
-两个for循环嵌套，最天真，是因为时间复杂度最高，但是不能忘它是空间复杂度最低的。
+两个for循环嵌套，最天真，是因为时间复杂度最高O(n<sup>2)，但是不能忘它是空间复杂度最低的O(1)。但是最天真的枚举不代表它没什么好说的。
 
 C++解一：
 
@@ -22,21 +22,22 @@ C++解一：
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-	vector<int> result;
-   	for (int i=0; i<nums.size();++i){
-		for(int j=i+1; j<nums.size();++j){
-			if(nums[i]+nums[j]==target){
-				result.push_back(i);
-				result.push_back(j);
-				return result;
-			}
-		}
-	}
-    }
+        vector<int> result;
+        for (int i=0; i<nums.size();++i){
+                for(int j=i+1; j<nums.size();++j){
+                        if(nums[i]+nums[j]==target){
+                                result.push_back(i);
+                                result.push_back(j);
+                                return result;
+                        }
+                }
+        }
+        throw std::invalid_argument("No solution");
+    }   
 };
 {% endhighlight %}
 
-Python解一：
+Python2.x/3.x解一：
 
 {% highlight python%}
 class Solution(object):
@@ -49,7 +50,7 @@ class Solution(object):
         for x in range (0, len(nums)):
             for y in range(x+1, len(nums)):
                 if nums[x]+nums[y] == target:
-return [x, y] 
+			return [x, y] 
 {% endhighlight %}
 
 Java解一：
@@ -65,6 +66,46 @@ class Solution {
             }
         }
         throw new IllegalArgumentException("No solution");
+    }
+}
+{% endhighlight %}
+
+C解一：
+
+{% highlight c %}
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* twoSum(int* nums, int numsSize, int target) {
+    static int result[2]= { 0, 0 };
+    int i,j;
+    for(i = 0; i < numsSize; i++)
+    {
+        for(j = i+1; j < numsSize; j++)
+        {
+            if(nums[i]+nums[j] == target)
+            {
+                result[0] = i ;
+                result[1] = j ;
+                return result;
+            }
+        }
+    }
+    return NULL;
+}
+{% endhighlight%}
+
+{% highlight csharp %}
+public class Solution {
+    public int[] TwoSum(int[] nums, int target) {
+         for (int i=0; i<nums.Length; i++){
+            for (int j=i+1; j<nums.Length; j++){
+                if (nums[i]+nums[j]==target){
+                    return new int[] { i,j };
+                }
+            }
+        }
+        throw new ArgumentNullException("No solution!");
     }
 }
 {% endhighlight %}
