@@ -26,9 +26,9 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         vector<int> result;
-        for (int i=0; i<nums.size();++i){
-                for(int j=i+1; j<nums.size();++j){
-                        if(nums[i]+nums[j]==target){
+        for (int i=0; i<nums.size(); ++i){
+                for(int j=i+1; j<nums.size(); ++j){
+                        if( nums[i]+nums[j] == target ){
                                 result.push_back(i);
                                 result.push_back(j);
                                 return result;
@@ -51,8 +51,8 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        for i in range (0, len(nums)):
-            for j in range(i+1, len(nums)):
+        for i in range ( 0, len(nums) ):
+            for j in range( i + 1, len(nums) ):
                 if nums[i]+nums[j] == target:
 		    return [i, j]
         raise ValueError("No solution") 
@@ -66,7 +66,7 @@ class Solution {
     public int[] twoSum(int[] nums, int target) {
         for (int i=0; i<nums.length; i++){
             for (int j=i+1; j<nums.length; j++){
-                if (nums[i]+nums[j]==target){
+                if (nums[i]+nums[j] == target){
                     return new int[] { i,j };
                 }
             }
@@ -84,7 +84,7 @@ Performance: 43ms
  * Note: The returned array must be malloced, assume caller calls free().
  **/
 int* twoSum(int* nums, int numsSize, int target) {
-    static int result[2]= { -1, -1 };
+    static int result[2] = { -1,-1 };
     for(int i = 0; i < numsSize; i++)
     {
         for(int j = i+1; j < numsSize; j++)
@@ -109,7 +109,7 @@ public class Solution {
     public int[] TwoSum(int[] nums, int target) {
          for (int i=0; i<nums.Length; i++){
             for (int j=i+1; j<nums.Length; j++){
-                if (nums[i]+nums[j]==target){
+                if (nums[i]+nums[j] == target){
                     return new int[] { i,j };
                 }
             }
@@ -131,7 +131,7 @@ Performance: 805ms
 var twoSum = function(nums, target) {
     for (var i=0; i<nums.length; i++){
         for (var j=i+1; j<nums.length; j++){
-            if (nums[i]+nums[j]===target){
+            if (nums[i]+nums[j] === target){
                 return [i,j];
             }
         }
@@ -223,7 +223,7 @@ Performance: 593ms
 
 图和Benchmark比较，除了`Java`和`Go`快的不正常，`C++`看起来有点慢，但是不知道编译器，`Python`真是不济，其他排序还挺理性。我想，
 
-- Leetcode里的`Java`和`go`，应该不是`CPU运行时间`。
+- Leetcode里的`Java`和`Go`，不管它是什么，但应该不是`CPU运行时间`。
 
 - `Python3`直接Time Out，在单独的手动测试集上`Python3`竟然比`Python2`慢将近一倍。这个真意外。
 
