@@ -173,7 +173,7 @@ class Solution {
                 }                
             }
          }
-    return result  
+         return result  
     }
 }
 {% endhighlight %}
@@ -205,7 +205,7 @@ class Solution {
                 }
             }
         }        
-    return intArrayOf()
+        return intArrayOf()
     }
 }
 {% endhighlight %}
