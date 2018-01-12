@@ -235,7 +235,7 @@ Performance: 593ms
 
 - 图表是在 [Infogram](https://infogram.com/) 里生成的
 
-- 题目和测试都是在 [Leetcode](https://leetcode.com/) 上进行的
+- 题目和测试都是在 [Leetcode](https://leetcode.com/) 上进行的，用了 [Leetcode-cli](https://github.com/skygragon/leetcode-cli) 把代码本地化
 
 - 期间把 [阿狗](https://www.instagram.com/thatwolfiefeeling/) 忘记，以至于它被泡在洗衣粉里一晚
 
