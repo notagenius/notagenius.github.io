@@ -4,10 +4,11 @@ title: About
 ---
 
 <p class="message">
-  Hey there! I am Aileen Xi! Carry On!
+  Hey there! My name is Aileen.
+  I am writing things about Computer Science here.
+  Any suggestions are welcome.
+  My email: aileen365@gmail.com
 </p>
 
-你好，我是威玲旺卡。
-
-我的email: aileen365@gmail.com
+我是威玲旺卡。
 
