@@ -9,7 +9,7 @@ title: About
   Any suggestions are welcome.
   My email: aileen365@gmail.com
   I am learning front end and algorithm.
-  My one and only social media public is instagram: <href="https://www.instagram.com/thatwolfiefeeling/"> Thatwolfiefeeling
+  My one and only social media public is instagram: [Thatwolfiefeeling](www.instagram.com/thatwolfiefeeling)
 </p>
 
 
