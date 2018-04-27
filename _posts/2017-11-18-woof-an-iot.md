@@ -50,11 +50,11 @@ ssh链接实例成功!
 ![phpMyAdmin.png](http://upload-images.jianshu.io/upload_images/94086-968d70df0c34f771.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 我安装的过程中原来用
 写用来执行插入操作的insert.php
-{% highlight: bash%}
+{% highlight bash%}
 sudo yum install -y http php php-mysql mysql mysql-server
 {% endhighlight %}
 后来折腾了好久也弄不好phpMyAdmin，后来只能全卸载，确定版本，这才搞定
-{% highlight: bash %}
+{% highlight bash %}
 sudo yum install -y httpd24 php70 mysql56-server php70-mysqlnd
 {% endhighlight %}
 创建index.php或者index.html就可以替换掉默认主页了。
@@ -78,7 +78,7 @@ okay，希望成功吧，启动派，准备读取数值了。
 我原来一直以为我需要读出二进制raw data再换算成可读数据，还琢磨着我该怎么查看它的输出结构呢？
 但其实库类已经把这个问题给handle了。移步 https://github.com/adafruit/Adafruit_Python_DHT
 安装完之后，因为我的传感器是DHT11，所以需要修改一下它的simpletest.py
-{% highlight python%}
+{% highlight python %}
 import Adafruit_DHT
 sensor = Adafruit_DHT.DHT11
 pin = 4
@@ -92,7 +92,7 @@ else:
 ![传感器数据读取成功.png](http://upload-images.jianshu.io/upload_images/94086-571490cf5550a495.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 #### 2.3 要思考一下在哪里登录数据库
 我们差一点就要在树莓派连接数据库了，因为当时我一直在想用php连接数据库该怎么码，后来Marek说用python连接MySQL不就好了，我那个时候思维被偏向了，我在派上安了MySQLdb，打算远程登录数据库，然后再插入数据，用root的身份和密码竟然被拒绝，这时我发现root是默认没有远程登录权限的，我要通过mysql script去赋予权限，
-{% highlight: bash %}
+{% highlight bash %}
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 {% endhighlight %}
@@ -163,7 +163,7 @@ $result = mysqli_query($mysqli, $sql);
 在第一集中，我只写了白板。
 连接数据库后，读取一个表的所有记录，循环输出三个键值，温度，湿度，时间戳。
 index.php
-{% hightlight php%}
+{% highlight php%}
 <?php
 
 echo "<h1>阿狗狗窝的温度湿度实时监视器</h1>";
@@ -224,6 +224,7 @@ while(1):
 测试！
 好，我们现在登录 http://wolfiethedog.de/woofaniot/s01e01/ 看看效果
 ![监视页面.png](http://upload-images.jianshu.io/upload_images/94086-9fe304f97132ef65.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 页面出现了树莓派中获取的当下温度和湿度，细细研究，时间间距并不是准时的1分钟。request给服务器的过程中还是出现了些短小的延时的。
 
 没有css的html终究是难看的，但是我们的毛坯房已经有了。下一集我和阿狗会专门研究显示的仪表盘，dashboard。
