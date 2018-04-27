@@ -116,6 +116,7 @@ sudo yum install -y httpd24 php70 mysql56-server php70-mysqlnd
 淘宝来的温度湿度传感器，一定要找找模块名字，找到了叫DHT11，三个针脚VCC，DATA和GND
 分别接到01(3.3v电压)，07(GPIO04)和06(GOUND)
 
+
 ![placeholder](http://upload-images.jianshu.io/upload_images/94086-03977d8b8b00ea57.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "pi")
 
 okay，希望成功吧，启动派，准备读取数值了。
@@ -237,7 +238,7 @@ $result = mysqli_query($mysqli, $sql);
 ?>
 {% endhighlight %}
 
-####3.4 写显示页面
+#### 3.4 写显示页面
 
 在第一集中，我只写了白板。
 连接数据库后，读取一个表的所有记录，循环输出三个键值，温度，湿度，时间戳。
