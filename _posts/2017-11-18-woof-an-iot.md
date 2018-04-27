@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ai-笔记：嚎出一个极简物联网
+title: Ai-笔记：Woof An IOT
 ---
 
 <div class="message">
