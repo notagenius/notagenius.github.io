@@ -11,7 +11,9 @@ title: Ai-笔记：开发pop-punk.rocks
 #### 0. 一个主机，多个域名
 
 刚开始的解决方案很天真，在index.php里写了一个switch，让不同的域名跳转到不同的文件夹。
-index.php
+
+`index.php`
+
 {% highlight php %}
 <?php
 switch ($_SERVER["HTTP_HOST"])
@@ -31,7 +33,7 @@ break;
 ?>
 {% endhighlight %}
 
-不过，登录就发现问题了，因为跳转文件夹，就变成二级域名了。跳转过后变成`www.pop-punk.rocks/poppunkrocks/`，这不是我想要的，得知Apache下可以用vitual hosts在路径`/etc/httpd/conf`下修改httpd.conf
+不过，登录就发现问题了，因为跳转文件夹，就变成二级域名了。跳转过后变成`www.pop-punk.rocks/poppunkrocks/`，这不是我想要的，得知Apache下可以用vitual hosts在路径`/etc/httpd/conf`下修改`httpd.conf`
 {% highlight bash %}
 Listen 80
 
@@ -56,13 +58,14 @@ Listen 80
 
 #### 1. Reveal.js嵌入视效
 说现在的艺术性前端，一言以概之，Usefulness不足，Pointlessness不少，可是观赏性就是爆表。问我喜不喜欢，我会说非常非常喜欢，因为就是创造力在canvas上的展现，还带这么点Coding的艺术，而且我相信它的功能性会丰富起来的。
-我想要做一个艺术友好的页面。p5.js, three.js, d3.js都可以。哪个方便用哪个。
+我想要做一个艺术友好的页面。`p5.js`, `three.js`, `d3.js`都可以。哪个方便用哪个。
 用d3.js是因为已经有现成的reveal.js的干净的plugin，three.js找到一个demo，但是代码不清晰。
 
 ![placeholder](/image/2018-05-10-black-bg.png "black.png")
 ![placeholder](/image/2018-05-10-white-bg.png "white.png")
 
-d3_js.html
+`d3_js.html`
+
 {% highlight html %}
 <body>
 <script src="//d3js.org/d3.v3.min.js"></script>
@@ -122,10 +125,12 @@ function move() {
 
 #### 2. Vue.js遍历Json
 
-因为这次歌词本比以往多很多，一共有8个乐队，将近90首歌，手动写html是最糟糕的主意，设计json条目，发现我需要band.title, song.title, youtube.link, song.lyrics
+因为这次歌词本比以往多很多，一共有8个乐队，将近90首歌，手动写html是最糟糕的主意，设计json条目，发现我需要`band.title`, `song.title`, `youtube.link`, `song.lyrics`
 因为json还是要手写，本来以为genius api可以给我返回歌词，但是后来发现并没有，歌词是有版权保护的。所以，我们给每个乐队安排了一个json。手动写json。
-vue-for在html里直接可以用，非常好用。
+`vue-for`在html里直接可以用，非常好用。
 所以保持了页面body很清晰。因为body主体就是一个json文件的2次遍历。
+
+`index.html`
 
 {% highlight html %}
 <section data-transition="convex" data-background="#2B2B2B" id="statechamps">
@@ -147,7 +152,9 @@ vue-for在html里直接可以用，非常好用。
 </section>
 {% endhighlight %}
 
-vue加载本地json出了点问题，简单的import怎么都失败，最后的解决方法是模拟成网络请求，我还是被这些异步加载块给弄糊涂了。
+vue加载本地json出了点问题，简单的`import`怎么都失败，最后的解决方法是模拟成网络请求，我还是被这些异步加载块给弄糊涂了。
+
+`index.html`
 
 {% highlight javascript %}
 <script>
@@ -168,9 +175,9 @@ vue加载本地json出了点问题，简单的import怎么都失败，最后的�
 
 #### 3. Reveal.js变竖屏和滚动条和Menu
 
-因为在做不是reveal.js设计出来要做的事情，所以需要改！
+因为在做不是`reveal.js`设计出来要做的事情，所以需要改！
 首先，歌词一定超过屏幕高度，我需要滚动条，
-customized.css
+`customized.css`
 
 {% highlight css %}
 .scrollable {
@@ -181,6 +188,7 @@ height: 1248px !important;
 {% endhighlight %}
 
 另外变竖排和为了在用户触摸屏幕的时候触发滚动条而不是走向不同的页面，我还需要禁用touch
+`index.html`
 
 {% highlight javascript %}
 Reveal.configure({ touch: false });
@@ -190,7 +198,7 @@ Reveal.configure({ width: 910, height: 1248 });
 910, 1248是这个主流手机屏幕比例下的，因为导航键的存在，不可以全屏。在iphone X这种高度下，是会[浪费](/image/2018-05-10-iphoneX.png "space waster")的。
 
 
-Menu是现成的Plugin，因为很多hardcoded的地方，所以就进源码改了，用阿狗icon的想法也没有落实，最后页面内icon还是fontawesome里的。
+Menu是现成的Plugin，因为很多hardcoded的地方，所以就进源码改了，用阿狗icon的想法也没有落实，最后页面内icon还是`fontawesome`里的。
 
 最后menu的效果：
 ![placeholder](/image/2018-05-10-menu.png "menu.png")
@@ -206,6 +214,7 @@ color block式幼稚的设计
 ![placeholder](/image/2018-05-10-color-4.png "color-4.png")
 
 最后的效果：
+
 ![placeholder](/image/2018-05-10-green.png "green.png")
 ![placeholder](/image/2018-05-10-red.png "red.png")
 ![placeholder](/image/2018-05-10-grey.png "grey.png")
@@ -217,7 +226,7 @@ color block式幼稚的设计
 
 解决方案是，我写了一条字，“如果没有颜色，看不清歌词，请去themeless的子页面”的白痴方案。
 
-产品体验是，我本来计划是进一个页面，就开始播歌，在PC上这个实现了，但是在手机上，因为有流量问题，我本还担心是不是要改一下设计，后来发现，即使autoplay设置成true，手机方面还是会拦截自动播放，就没有去处理它。
+产品体验是，我本来计划是进一个页面，就开始播歌，在PC上这个实现了，但是在手机上，因为有流量问题，我本还担心是不是要改一下设计，后来发现，即使`autoplay`设置成`true`，手机方面还是会拦截自动播放，就没有去处理它。
 
 自我评价的话，这还是一个拼凑现成工具的网站，并没有很多原创性。
 但是功能性上来说，听歌和背歌词都很方便。
