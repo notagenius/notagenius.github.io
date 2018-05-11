@@ -177,7 +177,7 @@ height: 1248px !important;
 {% endhighlight %}
 
 另外变竖排和为了在用户触摸屏幕的时候触发滚动条而不是走向不同的页面，我还需要禁用touch
-{% highlight javascript%}
+{% highlight javascript %}
 Reveal.configure({ touch: false });
 Reveal.configure({ width: 910, height: 1248 });
 {% end highlight %}
