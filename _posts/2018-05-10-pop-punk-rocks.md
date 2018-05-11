@@ -66,7 +66,7 @@ Listen 80
 ![placeholder](/image/2018-05-10-white-bg.png "white.png")
 
 d3_js.html
-{% highlight html%}
+{% highlight html %}
 <body>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
