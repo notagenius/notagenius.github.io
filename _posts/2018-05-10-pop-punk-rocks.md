@@ -187,9 +187,8 @@ Reveal.configure({ touch: false });
 Reveal.configure({ width: 910, height: 1248 });
 {% endhighlight %}
 
-910, 1248是这个主流手机屏幕比例下的，因为导航键的存在，不可以全屏。在iphone X这种高度下，是会浪费的。
+910, 1248是这个主流手机屏幕比例下的，因为导航键的存在，不可以全屏。在iphone X这种高度下，是会[浪费](/image/2018-05-10-iphoneX.png "space waster")的。
 
-![placeholder](/image/2018-05-10-iphoneX.png "space waster")
 
 Menu是现成的Plugin，因为很多hardcoded的地方，所以就进源码改了，用阿狗icon的想法也没有落实，最后页面内icon还是fontawesome里的。
 
