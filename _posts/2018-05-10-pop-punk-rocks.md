@@ -2,8 +2,10 @@
 layout: post
 title: Ai-笔记：开发pop-punk.rocks
 ---
+
 <div class="message">
 为了准备即将去参加的Galaxy Camp，第一个pop punk音乐节，我开发了一个简单的歌词网站pop-punk.rocks，这是开发过程中遇到和解决的困难。
+
 </div>
 
 我写的一个网站
@@ -32,8 +34,8 @@ break;
 ?>
 {% endhighlight %}
 
-不过，登录就发现问题了，因为跳转文件夹，就变成二级域名了。跳转过后变成`www.pop-punk.rocks/poppunkrocks/`，这不是我想要的，问了马赛后，得知Apache下可以用vitual hosts在路径`/etc/httpd/conf下修改httpd.conf`
-{% highlight bash %}
+不过，登录就发现问题了，因为跳转文件夹，就变成二级域名了。跳转过后变成`www.pop-punk.rocks/poppunkrocks/`，这不是我想要的，得知Apache下可以用vitual hosts在路径`/etc/httpd/conf`下修改httpd.conf
+{% highlight html %}
 Listen 80
 
 <VirtualHost *:80>
@@ -147,7 +149,7 @@ vue-for在html里直接可以用，非常好用。
 
 vue加载本地json出了点问题，简单的import怎么都失败，最后的解决方法是模拟成网络请求，我还是被这些异步加载块给弄糊涂了。
 
-{% highlight javascript%}
+{% highlight javascript %}
 <script>
 		(async () => {
 			const statechampsResponse = await fetch('./json/statechamps.json');
@@ -168,7 +170,7 @@ vue加载本地json出了点问题，简单的import怎么都失败，最后的�
 因为在做不是reveal.js设计出来要做的事情，所以需要改！
 首先，歌词一定超过屏幕高度，我需要滚动条，
 customized.css
-{% highlight css%}
+{% highlight css %}
 .scrollable {
 overflow-y: auto !important;
 overflow-x: hidden !important;
