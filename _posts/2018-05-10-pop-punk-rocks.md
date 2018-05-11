@@ -186,7 +186,7 @@ height: 1248px !important;
 {% highlight javascript %}
 Reveal.configure({ touch: false });
 Reveal.configure({ width: 910, height: 1248 });
-{% end highlight %}
+{% endhighlight %}
 
 910, 1248是这个主流手机屏幕比例下的，因为导航键的存在，不可以全屏。在iphone X这种高度下，是会浪费的。
 [!placeholder](/image/2018-05-10-iphoneX.png "space waster")
