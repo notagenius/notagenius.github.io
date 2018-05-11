@@ -174,7 +174,7 @@ overflow-y: auto !important;
 overflow-x: hidden !important;
 height: 1248px !important;
 }
-{% endhightlight %}
+{% endhighlight %}
 
 另外变竖排和为了在用户触摸屏幕的时候触发滚动条而不是走向不同的页面，我还需要禁用touch
 {% highlight javascript%}
