@@ -207,7 +207,7 @@ color block式幼稚的设计
 
 最后的效果：
 ![placeholder](/image/2018-05-10-green.png "green.png")
-![placeholder](/image/2018-05-10-green.png "red.png")
+![placeholder](/image/2018-05-10-red.png "red.png")
 
 #### 5. 问题和结语
 
