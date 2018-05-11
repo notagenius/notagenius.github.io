@@ -33,7 +33,7 @@ break;
 ?>
 {% endhighlight %}
 
-不过，登录就发现问题了，因为跳转文件夹，就变成二级域名了。跳转过后变成`www.pop-punk.rocks/poppunkrocks/`，这不是我想要的，得知Apache下可以用vitual hosts在路径`/etc/httpd/conf`下修改`httpd.conf`
+不过，登录就发现问题了，因为跳转文件夹，就变成二级域名了。跳转过后变成`www.pop-punk.rocks/poppunkrocks/`，这不是我想要的，得知Apache下可以用virtual hosts在路径`/etc/httpd/conf`下修改`httpd.conf`
 {% highlight bash %}
 Listen 80
 
@@ -126,7 +126,7 @@ function move() {
 #### 2. Vue.js遍历Json
 
 因为这次歌词本比以往多很多，一共有8个乐队，将近90首歌，手动写html是最糟糕的主意，设计json条目，发现我需要`band.title`, `song.title`, `youtube.link`, `song.lyrics`
-因为json还是要手写，本来以为genius api可以给我返回歌词，但是后来发现并没有，歌词是有版权保护的。所以，我们给每个乐队安排了一个json。手动写json。
+因为json还是要手写，本来以为genius api可以给我返回歌词，但是后来发现并没有，歌词是有版权保护的。所以，我给每个乐队安排了一个json。手动写json。
 `vue-for`在html里直接可以用，非常好用。
 所以保持了页面body很清晰。因为body主体就是一个json文件的2次遍历。
 
@@ -195,7 +195,7 @@ Reveal.configure({ touch: false });
 Reveal.configure({ width: 910, height: 1248 });
 {% endhighlight %}
 
-910, 1248是这个主流手机屏幕比例下的，因为导航键的存在，不可以全屏。在iphone X这种高度下，是会[浪费](/image/2018-05-10-iphoneX.png "space waster")的。
+910, 1248是这个主流手机屏幕比例下的，因为导航键的存在，不可以全屏。在iphone X这种长条的高宽比例下，空间还是被[蛮多浪费](/image/2018-05-10-iphoneX.png "space waster")的。
 
 
 Menu是现成的Plugin，因为很多hardcoded的地方，所以就进源码改了，用阿狗icon的想法也没有落实，最后页面内icon还是`fontawesome`里的。
@@ -226,9 +226,9 @@ color block式幼稚的设计
 
 解决方案是，我写了一条字，“如果没有颜色，看不清歌词，请去themeless的子页面”的白痴方案。
 
-产品体验是，我本来计划是进一个页面，就开始播歌，在PC上这个实现了，但是在手机上，因为有流量问题，我本还担心是不是要改一下设计，后来发现，即使`autoplay`设置成`true`，手机方面还是会拦截自动播放，就没有去处理它。
+产品体验，原来计划进一个页面，就开始播歌，在PC上这个实现了，但是在手机上，因为有流量问题，本还担心是不是要改一下设计，后来发现，即使`autoplay`设置成`true`，手机方面还是会拦截自动播放，就没有去处理它。
 
 自我评价的话，这还是一个拼凑现成工具的网站，并没有很多原创性。
-但是功能性上来说，听歌和背歌词都很方便。
+但是功能性上来说，听歌和背歌词都很方便，音乐节如果可以Having a good time，就值得了。
 
 「完」
