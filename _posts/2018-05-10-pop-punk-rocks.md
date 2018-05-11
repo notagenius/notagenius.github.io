@@ -127,6 +127,7 @@ function move() {
 因为json还是要手写，本来以为genius api可以给我返回歌词，但是后来发现并没有，歌词是有版权保护的。所以，我们给每个乐队安排了一个json。手动写json。
 vue-for在html里直接可以用，非常好用。
 所以保持了页面body很清晰。因为body主体就是一个json文件的2次遍历。
+
 {% highlight html %}
 <section data-transition="convex" data-background="#2B2B2B" id="statechamps">
 	<section class="scrollable">
@@ -167,9 +168,11 @@ vue加载本地json出了点问题，简单的import怎么都失败，最后的�
 {% endhighlight %}
 
 #### 3. Reveal.js变竖屏和滚动条和Menu
+
 因为在做不是reveal.js设计出来要做的事情，所以需要改！
 首先，歌词一定超过屏幕高度，我需要滚动条，
 customized.css
+
 {% highlight css %}
 .scrollable {
 overflow-y: auto !important;
@@ -179,6 +182,7 @@ height: 1248px !important;
 {% endhighlight %}
 
 另外变竖排和为了在用户触摸屏幕的时候触发滚动条而不是走向不同的页面，我还需要禁用touch
+
 {% highlight javascript %}
 Reveal.configure({ touch: false });
 Reveal.configure({ width: 910, height: 1248 });
