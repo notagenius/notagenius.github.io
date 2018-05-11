@@ -61,6 +61,8 @@ Listen 80
 我想要做一个艺术友好的页面。`p5.js`, `three.js`, `d3.js`都可以。哪个方便用哪个。
 用d3.js是因为已经有现成的reveal.js的干净的plugin，three.js找到一个demo，但是代码不清晰。
 
+嘻嘻，在页面上画我自己想要的“生成艺术”，还是擅长的。
+
 ![placeholder](/image/2018-05-10-black-bg.png "black.png")
 ![placeholder](/image/2018-05-10-white-bg.png "white.png")
 
