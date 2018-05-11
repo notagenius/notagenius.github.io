@@ -4,12 +4,9 @@ title: Ai-笔记：开发pop-punk.rocks
 ---
 
 <div class="message">
-为了准备即将去参加的Galaxy Camp，第一个pop punk音乐节，我开发了一个简单的歌词网站pop-punk.rocks，这是开发过程中遇到和解决的困难。
+为了准备即将去参加的Galaxy Camp，第一个pop punk音乐节，我开发了一个简单的歌词网站[www.pop-punk.rocks](www.pop-punk.rocks)，这是开发过程中遇到和解决的困难。
 
 </div>
-
-我写的一个网站
-[www.pop-punk.rocks](www.pop-punk.rocks)
 
 #### 0. 一个主机，多个域名
 
@@ -35,7 +32,7 @@ break;
 {% endhighlight %}
 
 不过，登录就发现问题了，因为跳转文件夹，就变成二级域名了。跳转过后变成`www.pop-punk.rocks/poppunkrocks/`，这不是我想要的，得知Apache下可以用vitual hosts在路径`/etc/httpd/conf`下修改httpd.conf
-{% highlight html %}
+{% highlight bash %}
 Listen 80
 
 <VirtualHost *:80>
@@ -119,10 +116,12 @@ function move() {
 </body>
 {% endhighlight %}
 
+主页最终效果：
 ![placeholder](/image/2018-05-10-black-text-bg.png "black-text.png")
 
 
 #### 2. Vue.js遍历Json
+
 因为这次歌词本比以往多很多，一共有8个乐队，将近90首歌，手动写html是最糟糕的主意，设计json条目，发现我需要band.title, song.title, youtube.link, song.lyrics
 因为json还是要手写，本来以为genius api可以给我返回歌词，但是后来发现并没有，歌词是有版权保护的。所以，我们给每个乐队安排了一个json。手动写json。
 vue-for在html里直接可以用，非常好用。
@@ -152,18 +151,18 @@ vue加载本地json出了点问题，简单的import怎么都失败，最后的�
 
 {% highlight javascript %}
 <script>
-		(async () => {
-			const statechampsResponse = await fetch('./json/statechamps.json');
-			const statechamps_json = await statechampsResponse.json();
-			new Vue({
-				el: '#statechamps',
-				data() {
-					return {
-						items: statechamps_json
-					}
+	(async () => {
+		const statechampsResponse = await fetch('./json/statechamps.json');
+		const statechamps_json = await statechampsResponse.json();
+		new Vue({
+			el: '#statechamps',
+			data() {
+			return {
+				items: statechamps_json
+				}
 				}
 			})
-		})();
+	})();
 </script>
 {% endhighlight %}
 
@@ -193,7 +192,24 @@ Reveal.configure({ width: 910, height: 1248 });
 
 Menu是现成的Plugin，因为很多hardcoded的地方，所以就进源码改了，用阿狗icon的想法也没有落实，最后页面内icon还是fontawesome里的。
 
-#### 4. 问题和结语
+最后menu的效果：
+![placeholder](/image/2018-05-10-menu.png "menu.png")
+
+#### 4. 设计
+
+color block式幼稚的设计
+
+用到的颜色表：
+![placeholder](/image/2018-05-10-color-1.png "color-1.png")
+![placeholder](/image/2018-05-10-color-2.png "color-2.png")
+![placeholder](/image/2018-05-10-color-3.png "color-3.png")
+![placeholder](/image/2018-05-10-color-4.png "color-4.png")
+
+最后的效果：
+![placeholder](/image/2018-05-10-green.png "green.png")
+![placeholder](/image/2018-05-10-green.png "red.png")
+
+#### 5. 问题和结语
 
 没有解决的问题是转业的背景颜色，应该是在不同乐队时改变的，但是firefox在2页之后，就无法改变背景颜色了，当内容是inline的时，没有问题，当内容是在加载json后，firefox就出现问题了。测试了firefox 59 和 60, 都失败了，而safari，chrome都没有这个问题。
 解决方案是，我写了一条字，“如果没有颜色，看不清歌词，请去themeless的子页面”的白痴方案。
