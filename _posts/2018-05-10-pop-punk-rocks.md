@@ -199,7 +199,6 @@ Menu是现成的Plugin，因为很多hardcoded的地方，所以就进源码改�
 
 color block式幼稚的设计
 
-用到的颜色表：
 ![placeholder](/image/2018-05-10-color-1.png "color-1.png")
 ![placeholder](/image/2018-05-10-color-2.png "color-2.png")
 ![placeholder](/image/2018-05-10-color-3.png "color-3.png")
@@ -208,6 +207,8 @@ color block式幼稚的设计
 最后的效果：
 ![placeholder](/image/2018-05-10-green.png "green.png")
 ![placeholder](/image/2018-05-10-red.png "red.png")
+![placeholder](/image/2018-05-10-grey.png "grey.png")
+![placeholder](/image/2018-05-10-pink.png "pink.png")
 
 #### 5. 问题和结语
 
