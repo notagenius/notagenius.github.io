@@ -130,19 +130,19 @@ vue-for在html里直接可以用，非常好用。
 {% highlight html %}
 <section data-transition="convex" data-background="#2B2B2B" id="statechamps">
 	<section class="scrollable">
-		<h2>State Champs</h2>
-			<template v-for="(item,index) in items">
-				<a v-bind:href="'#/1/'+ ++index">
-				<h3 style="color:orange">{{item.song}}</h3>
-				</a>
-			</template>
+	<h2>State Champs</h2>
+		<template v-for="(item,index) in items">
+		<a v-bind:href="'#/1/'+ ++index">
+		<h3 style="color:orange">{{item.song}}</h3>
+		</a>
+		</template>
 	</section>
 		<template v-for="item in item1s">
-			<section class="scrollable" data-scrolling>
-				<iframe :data-src="item.Youtube"></iframe>
-				<h2 style="color:orange">{{item.song}}</h2>
-				<p v-html="item.lyrics"></p>
-			</section>
+		<section class="scrollable" data-scrolling>
+			<iframe :data-src="item.Youtube"></iframe>
+			<h2 style="color:orange">{{item.song}}</h2>
+			<p v-html="item.lyrics"></p>
+		</section>
 		</template>
 </section>
 {% endhighlight %}
@@ -152,16 +152,16 @@ vue加载本地json出了点问题，简单的import怎么都失败，最后的�
 {% highlight javascript %}
 <script>
 	(async () => {
-		const statechampsResponse = await fetch('./json/statechamps.json');
-		const statechamps_json = await statechampsResponse.json();
-		new Vue({
-			el: '#statechamps',
-			data() {
-			return {
+	const statechampsResponse = await fetch('./json/statechamps.json');
+	const statechamps_json = await statechampsResponse.json();
+	new Vue({
+		el: '#statechamps',
+		data() {
+		return {
 				items: statechamps_json
 				}
 				}
-			})
+		})
 	})();
 </script>
 {% endhighlight %}
@@ -188,12 +188,14 @@ Reveal.configure({ width: 910, height: 1248 });
 {% endhighlight %}
 
 910, 1248是这个主流手机屏幕比例下的，因为导航键的存在，不可以全屏。在iphone X这种高度下，是会浪费的。
-[!placeholder](/image/2018-05-10-iphoneX.png "space waster")
+
+！[placeholder](/image/2018-05-10-iphoneX.png "space waster")
 
 Menu是现成的Plugin，因为很多hardcoded的地方，所以就进源码改了，用阿狗icon的想法也没有落实，最后页面内icon还是fontawesome里的。
 
 最后menu的效果：
 ![placeholder](/image/2018-05-10-menu.png "menu.png")
+
 
 #### 4. 设计
 
@@ -212,7 +214,7 @@ color block式幼稚的设计
 
 #### 5. 问题和结语
 
-没有解决的问题是转业的背景颜色，应该是在不同乐队时改变的，但是firefox在2页之后，就无法改变背景颜色了，当内容是inline的时，没有问题，当内容是在加载json后，firefox就出现问题了。测试了firefox 59 和 60, 都失败了，而safari，chrome都没有这个问题。
+没有解决的问题是在firefox下转页时的背景颜色会偶尔丢失，应该是在不同乐队时改变的，但是firefox在2页之后，就无法改变背景颜色了，当内容是inline的时，没有问题，当内容是在加载json后，firefox就出现问题了。测试了firefox 59 和 60, 都失败了，而safari，chrome都没有这个问题。
 解决方案是，我写了一条字，“如果没有颜色，看不清歌词，请去themeless的子页面”的白痴方案。
 产品体验是，我本来计划是进一个页面，就开始播歌，在PC上这个实现了，但是在手机上，因为有流量问题，我本还担心是不是要改一下设计，后来发现，即使autoplay设置成true，手机方面还是会拦截自动播放，就没有去处理这个问题。
 
