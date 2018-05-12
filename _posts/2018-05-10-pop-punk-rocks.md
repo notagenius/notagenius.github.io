@@ -4,7 +4,7 @@ title: Ai-笔记：开发pop-punk.rocks
 ---
 
 <div class="message">
-为了准备即将去参加的Galaxy Camp，第一个pop punk音乐节，我开发了一个简单的歌词网站<a href="www.pop-punk.rocks"> www.pop-punk.rocks </a>，这是开发过程中遇到和解决的困难。
+为了准备即将去参加的Galaxy Camp，第一个pop punk音乐节，我开发了一个简单的歌词网站<a href="http://www.pop-punk.rocks"> www.pop-punk.rocks </a>，这是开发过程中遇到和解决的困难。
 
 </div>
 
