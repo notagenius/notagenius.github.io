@@ -7,7 +7,7 @@ title: Ai-笔记：Woof An IOT
 前言：这篇是「威玲旺卡Aileen」和「阿狗A-Go」的原创物联网边造边写系列笔记。没有告知时请不要转载呐，谢谢。另外我要感谢Marcel Ochsendorf（马赛）同学对我的指导。
 </div>
 
-[This demo is online](http://www.notagenius.cn/woofaniot/s01e01/)
+[This demo is online](http://www.wolfiethedog.de/woofaniot/s01e01/)
 
 #### 本集问题情景：
 
