@@ -52,6 +52,8 @@ Listen 80
 </VirtualHost>
 {% endhighlight %}
 
+最后重启`service httpd restart`
+
 问题解决了。
 
 所以，一个主机想用安排多个域名，用虚拟主机。
