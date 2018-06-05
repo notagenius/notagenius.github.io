@@ -13,7 +13,7 @@ After Marcel told me about [boxes.py](https://www.festi.info/boxes.py/) to gener
 
 #### Quick Answer: 
 
-Applying <strong>“Object to Path”</strong>
+Applying <em>“Object to Path”</em>
 
 #### Detailed Answer: 
 
@@ -25,7 +25,7 @@ Now, this is what inkscape looks at an object, it is a rectangle (with a very ro
 
 save it as <em>.svg</em> file. this is what I get in the file:
 
-{% highlight html %}
+{% highlight txt %}
 <rect
  style=”opacity:0.67099998;fill:#ff6200;fill-opacity:1;fill-rule:nonzero;stroke:#ffe000;stroke-width:0.69999999;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
  id=”rect5971"
@@ -49,7 +49,7 @@ more nodes appear, suddenly we can change it into any shape we want. Not necessa
 
 save the path as <em>.svg</em> file. this is what I get, a path indicates the laser cutter to go along:
 
-{% highlight html %}
+{% highlight txt %}
 <path
  style=”opacity:0.67099998;fill:#ff6200;fill-opacity:1;fill-rule:nonzero;stroke:#ffe000;stroke-width:0.69999999;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
  d=”m 28.962425,112.16964 h 0.850447 c 5.522893,0 9.969122,4.44623 9.969122,9.96912 0,5.5229 -4.446229,9.96912 -9.969122,9.96912 h -0.850447 c -5.522893,0 -9.969122,-4.44622 -9.969122,-9.96912 0,-5.52289 4.446229,-9.96912 9.969122,-9.96912 z”
