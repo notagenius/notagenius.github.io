@@ -55,7 +55,7 @@ save the path as <em>.svg</em> file. this is what I get, a path indicates the la
  d=”m 28.962425,112.16964 h 0.850447 c 5.522893,0 9.969122,4.44623 9.969122,9.96912 0,5.5229 -4.446229,9.96912 -9.969122,9.96912 h -0.850447 c -5.522893,0 -9.969122,-4.44622 -9.969122,-9.96912 0,-5.52289 4.446229,-9.96912 9.969122,-9.96912 z”
  id=”rect5971" 
 />
-<% endhighlight %>
+{% endhighlight %}
 
 while I thought there would be no more trouble, I got another failure.
 
@@ -132,5 +132,3 @@ two way to engrave, 1) set different colors, one for cutting, one for engrave, a
 ![placeholder](/image/2018-05-30-inter-section-filling.png)
 
 [END]
-
-
