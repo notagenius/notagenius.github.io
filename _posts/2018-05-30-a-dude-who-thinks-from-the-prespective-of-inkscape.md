@@ -7,15 +7,17 @@ title: A Dude Who Thinks from The Prespective of Inkscape
 This blog is an inkscape note, I will talk about my inkscape experience to laser cutting last week. which will cover the understanding of “object to path” and “stroke to path”. And an answer to the fantastic long-run trouble about the missing lxml when using extensions.
 </div>
 
-#### 0. Fail 1: 
+### 1. Understanding "Object To Path"
+
+#### 1.1 Probelm 1: 
 
 After Marcel told me about [boxes.py](https://www.festi.info/boxes.py/) to generate the initial box files and apply modification on it. It seemed easy. We brought it to the laser cutter. It doesn’t work. orz. Paul helped to change the parameters for a great while. It still doesn’t work. orz
 
-#### 0. Quick Answer: 
+#### 1.2 Quick Answer: 
 
 Applying <em>“Object to Path”</em>
 
-#### 0. Detailed Answer: 
+#### 1.3 Detailed Answer: 
 
 When I was standing there, I already knew that I messed up the ideas of an Object and a Path in inkscape. The requirement of “being understanding” is not only thinking from another human, such a beginning level, isn’t it. It seems like thinking from the perspective of a program is what all the mammals need to reach. lol
 
@@ -59,15 +61,17 @@ save the path as <em>.svg</em> file. this is what I get, a path indicates the la
 
 while I thought there would be no more trouble, I got another failure.
 
-#### 1. Fail 2: 
+### 2. Understanding "Stroke To Path"
+
+#### 2.1 Problem 2: 
 
 Finally the laser cutter started to work, but it cut multiple times at the same path.
 
-#### 1. Quick Answer: 
+#### 2.2 Quick Answer: 
 
 Being careful with <em>“Stroke to Path”</em>
 
-#### 1. Detailed Answer: 
+#### 2.3 Detailed Answer: 
 
 When I saw the way the laser cutter moved, it made me think that duplicated paths share the same places so it went over and over again. I made great great effort to try to get rid of the redundant lines, combined nodes. All didn’t work. I started to think maybe they were not overlapped. they were different paths just very close. I made a great close-up. That was really the reason. It came from when a stroke was set with a thickness, and after I applying “stroke to path”, paths along the edges of the original stroke were created.
 
@@ -81,15 +85,17 @@ after <em>“Stroke to Path”</em>, our path became the edges of the original s
 
 That is why the laser cutter went through the same (but actually not exactly) path multiple times.
 
-#### 2. Fail 3: 
+### 3. Extensions TroubleShooting:
+
+#### 3.1 Problem 3:
 
 When I tried to use Customized Extensions. I kept get missing lxml module error.
 
-#### 2. Quick Answer: 
+#### 3.2 Quick Answer: 
 
 Check your python path
 
-#### 2. Detailed Answer: 
+#### 3.3 Detailed Answer: 
 This is such a pain. Because import lxml works just fine. I had no clue why it came along.
 
 [All I found](http://www.inkscapeforum.com/viewtopic.php?t=12581) is saying that it was a long-term bug.
@@ -114,7 +120,7 @@ python-interpreter=”${HOME}/miniconda2/bin/python”
 
 the problem is suddenly fixed.
 
-#### Other small Notes 
+### 4. Other small Notes 
 
 when using inkscape for lasercutting:
 
