@@ -128,7 +128,7 @@ when using inkscape for lasercutting:
 two way to engrave, 1) set different colors, one for cutting, one for engrave, and setting cut way as “combine”, because engraving goes like bitmap. 2) make two runs, set less power for engrave part, then it will not able to go through.
 - material and parameters: [https://hci.rwth-aachen.de/lasercutter](http://hci.rwth-aachen.de/lasercutter)
 - lasercutter can cut paper
-- inkscape extensions having <em>.py</em> and <em>.inx</em> to say where to put it in the menu. they all goes to <em>${HOME}/.congif/inkscape/extensions<em>, and restart the program. customized font folder in my machine /usr/share/fonts
+- inkscape extensions having <em>.py</em> and <em>.inx</em> to say where to put it in the menu. They all goes to <em>${HOME}/.congif/inkscape/extensions<em>, and restart the program. customized font folder in my machine /usr/share/fonts
 - making a physical dot on the material along the laser calibration red pot. just in case when the job has to be interrupted. we still have a chance to continue. when the material is not standard size, set the canvas in program as real size to save material. And if still not confident, making power as 0 to see if every thing is in the area or use VisiCut to preview.
 - in inkscape, the display unit <em>“mm”</em> is set at <em>File -> Document</em> Properties, select in object mode can change object size.
 - one node can only connect to two other nodes. so don’t try to make three connects to a node.
