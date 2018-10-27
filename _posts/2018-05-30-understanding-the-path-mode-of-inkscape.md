@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Dude Who Thinks from The Prespective of Inkscape
+title: Understanding the Path Mode of Inkscape
 ---
 
 <div class="message">
