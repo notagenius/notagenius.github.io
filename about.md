@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-Hey there! My name is Aileen.
+Hey there! My name is Weiling.
 I am writing things about Computer Science here.
 Any suggestions are welcome.
 My email: aileen365@gmail.com
